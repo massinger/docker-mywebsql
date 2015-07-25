@@ -1,8 +1,10 @@
 #!/bin/bash
 set -e
 
-#missing form repository 
-wget http://sourceforge.net/projects/mywebsql/files/stable/mywebsql-3.6.zip/download
+#missing from original repository ... 
+wget http://en.osdn.jp/projects/sfnet_mywebsql/downloads/stable/mywebsql-3.6.zip/
+unzip mywebsql-3.6.zip -d /var/www/mywebsql
+rm mywebsql-3.6.zip
 
  #apache2 conf
  a2enmod rewrite
