@@ -2,8 +2,8 @@
 set -e
 
 #missing from original repository ... 
-wget http://en.osdn.jp/projects/sfnet_mywebsql/downloads/stable/mywebsql-3.6.zip/
-unzip mywebsql-3.6.zip -d /var/www/mywebsql
+wget http://www.mirrorservice.org/sites/dl.sourceforge.net/pub/sourceforge/m/my/mywebsql/stable/mywebsql-3.6.zip
+unzip mywebsql-3.6.zip -d /var/www
 rm mywebsql-3.6.zip
 
  #apache2 conf
