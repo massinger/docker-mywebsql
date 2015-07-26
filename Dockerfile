@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y -q unzip \
                                             php5 \
                                             apache2 \
                                             php5-mysql \
+                                            php5-pgsql \
                     && apt-get clean \
                     && rm -rf /tmp/* /var/tmp/*  \
                     && rm -rf /var/lib/apt/lists/*
