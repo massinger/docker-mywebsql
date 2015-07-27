@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y -q unzip \
                                             php5-pgsql \
                                             php5-curl \
                                             php5-gmp \
+                                            php5-sqlite\
                     && apt-get clean \
                     && rm -rf /tmp/* /var/tmp/*  \
                     && rm -rf /var/lib/apt/lists/*
