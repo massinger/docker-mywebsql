@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install -y -q unzip \
                                             apache2 \
                                             php5-mysql \
                                             php5-pgsql \
-                                            php5-sqlite \
                                             php5-curl \
                                             php5-gmp \
                     && apt-get clean \
