@@ -44,7 +44,7 @@ in this two case the server: custom server option will be used the db like domai
 
 ## More Info
 
-About mywebsql[mywebsql.net][1]
+About mywebsql [mywebsql.net][1]
 
 To help improve this container [quantumobject/docker-mywebsql][5]
 
