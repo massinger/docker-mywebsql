@@ -1,6 +1,6 @@
 # docker-mywebsql
 
-Docker container for [Mywebsql][3]
+Docker container for [MyWebSQL][3]
 
 " Simplified Database Web Administration. For MySQL, SQLite and PostgreSQL databases. Manage your databases over the web using a secure and intuitive interface with blazing fast performance "
 
