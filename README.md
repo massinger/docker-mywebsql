@@ -8,7 +8,7 @@ Docker container for [MyWebSQL][3]
 
   - [Docker][2]
 
-To install docker in Ubuntu 14.04 use the commands:
+To install docker in Ubuntu 15.04 use the commands:
 
     $ sudo apt-get update
     $ wget -qO- https://get.docker.com/ | sh
