@@ -2,7 +2,8 @@
 set -e
 
 #missing from original repository ... 
-wget http://www.mirrorservice.org/sites/dl.sourceforge.net/pub/sourceforge/m/my/mywebsql/stable/mywebsql-3.6.zip
+wget http://sourceforge.net/projects/mywebsql/files/stable/mywebsql-3.6.zip/download
+mv download mywebsql-3.6.zip
 unzip mywebsql-3.6.zip -d /var/www
 rm mywebsql-3.6.zip
 
