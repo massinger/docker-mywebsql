@@ -48,11 +48,11 @@ About mywebsql [mywebsql.net][1]
 
 To help improve this container [quantumobject/docker-mywebsql][5]
 
-For additional info about us and our projects check our site [www.quantumobject.com][6]
+For additional info about us and our projects check our site [www.quantumobject.org][6]
 
 [1]:http://mywebsql.net/
 [2]:https://www.docker.com
 [3]:http://mywebsql.net/downloads/
 [4]:http://docs.docker.com
 [5]:https://github.com/QuantumObject/docker-mywebsql
-[6]:http://www.quantumobject.com/
+[6]:https://www.quantumobject.org/
