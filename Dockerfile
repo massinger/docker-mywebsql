@@ -3,6 +3,8 @@
 FROM quantumobject/docker-baseimage:15.10
 MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 
+RUN sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
+
 #add repository and update the container
 #Installation of nesesary package/software for this containers...
 RUN apt-get update && apt-get install -y -q unzip \
