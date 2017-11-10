@@ -8,10 +8,10 @@ Docker container for [MyWebSQL][3]
 
   - [Docker][2]
 
-To install docker in Ubuntu 15.04 use the commands:
+To install docker in Ubuntu 16.04 use the commands:
 
     $ sudo apt-get update
-    $ wget -qO- https://get.docker.com/ | sh
+    $ sudo wget -qO- https://get.docker.com/ | sh
 
  To install docker in other operating systems check [docker online documentation][4]
 
@@ -31,15 +31,19 @@ but this is not recomended, better to used docker link between container :
     $ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
     $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=mysecretpassword -d mysql
     
-and you will link with database by 
+and you will link with Postgres database by  
 
     $ docker run -d -p 80 --name mywebsql --link some-postgres:db quantumobject/docker-mywebsql
     
-or for to link to MYSQL container 
+or for to link to MySQL container  by
 
     $ docker run -d -p 80 --name mywebsql --link some-mysql:db quantumobject/docker-mywebsql
     
-in this two case the server: custom server option will be used the db like domain name. 
+In this two case the server: custom server option will be used the db like domain name. 
+
+Postgres default admin user : postgres
+
+Mysql admin user : root
 
 
 ## More Info
