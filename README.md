@@ -40,7 +40,9 @@ or for to link to MySQL container  by
     $ docker run -d -p 80 --name mywebsql --link some-mysql:db quantumobject/docker-mywebsql
     
 In this two case the server: custom server option will be used the db like domain name. 
+
 Postgres default admin user : postgres
+
 Mysql admin user : root
 
 
