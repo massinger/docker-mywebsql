@@ -10,6 +10,7 @@ MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 RUN apt-get update && apt-get install -y -q unzip \
                                             php7.0 \
                                             apache2 \
+                                            libapache2-mod-php7.0 \
                                             php7.0-mysql \
                                             php7.0-pgsql \
                                             php7.0-curl \
