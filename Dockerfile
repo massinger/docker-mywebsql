@@ -1,22 +1,20 @@
 #name of container: docker-mywebsql
-#versison of container: 0.3.1
-FROM quantumobject/docker-baseimage:16.04
+#versison of container: 0.3.2
+FROM quantumobject/docker-baseimage:18.04
 MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
-
-# RUN sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
 
 #add repository and update the container
 #Installation of nesesary package/software for this containers...
 RUN apt-get update && apt-get install -y -q unzip \
-                                            php7.0 \
+                                            php \
                                             apache2 \
-                                            libapache2-mod-php7.0 \
-                                            php7.0-mysql \
-                                            php7.0-pgsql \
-                                            php7.0-curl \
-                                            php7.0-gmp \
-                                            php7.0-sqlite3\
-                                            php7.0-zip\
+                                            libapache2-mod-php \
+                                            php-mysql \
+                                            php-pgsql \
+                                            php-curl \
+                                            php-gmp \
+                                            php-sqlite3\
+                                            php-zip\
                     && apt-get clean \
                     && rm -rf /tmp/* /var/tmp/*  \
                     && rm -rf /var/lib/apt/lists/*
