@@ -5,7 +5,7 @@ MAINTAINER Angel Rodriguez  "angel@quantumobject.com"
 
 #add repository and update the container
 #Installation of nesesary package/software for this containers...
-RUN apt-get update && apt-get install -y -q unzip \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q unzip \
                                             php \
                                             apache2 \
                                             libapache2-mod-php \
