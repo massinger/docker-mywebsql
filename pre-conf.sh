@@ -2,7 +2,7 @@
 set -e
 
 #missing from original repository ... 
-wget http://sourceforge.net/projects/mywebsql/files/stable/mywebsql-3.7.zip/download
+wget https://sourceforge.net/projects/mywebsql/files/stable/mywebsql-3.7.zip/download
 mv download mywebsql-3.7.zip
 unzip mywebsql-3.7.zip -d /var/www
 rm mywebsql-3.7.zip
