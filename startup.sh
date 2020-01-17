@@ -30,13 +30,13 @@ else
                # code ...
                sed -i.back "s#define('AUTH_TYPE'\, 'LOGIN')\;#define('AUTH_TYPE'\, 'BASIC')\;#"  /var/www/mywebsql/config/auth.php
                #need to allow different database type
-               if [ -n "$DB_ENV_MYSQL_ROOT_PASSWORD"]; then
+               if [ -n "$DB_ENV_MYSQL_ROOT_PASSWORD" ]; then
                 sed -i.back "s#define('AUTH_SERVER'\, 'localhost|mysql5')\;#define('AUTH_SERVER'\, 'db:3306|mysql5')\;#"  /var/www/mywebsql/config/auth.php       
                 sed -i.back "s#define('AUTH_LOGIN'\, 'test')\;#define('AUTH_LOGIN'\, 'root')\;#"  /var/www/mywebsql/config/auth.php
                 sed -i.back "s#define('AUTH_PASSWORD'\, 'test')\;#define('AUTH_PASSWORD'\, '`echo $DB_ENV_MYSQL_ROOT_PASSWORD`')\;#"  /var/www/mywebsql/config/auth.php
                fi
                # for postgres
-               if [ -n "$DB_ENV_POSTGRES_PASSWORD"]; then
+               if [ -n "$DB_ENV_POSTGRES_PASSWORD" ]; then
                 sed -i.back "s#define('AUTH_SERVER'\, 'localhost|mysql5')\;#define('AUTH_SERVER'\, 'db:5432|pgsql')\;#"  /var/www/mywebsql/config/auth.php       
                 sed -i.back "s#define('AUTH_LOGIN'\, 'test')\;#define('AUTH_LOGIN'\, 'postgres')\;#"  /var/www/mywebsql/config/auth.php
                 sed -i.back "s#define('AUTH_PASSWORD'\, 'test')\;#define('AUTH_PASSWORD'\, '`echo $DB_ENV_POSTGRES_PASSWORD`')\;#"  /var/www/mywebsql/config/auth.php
