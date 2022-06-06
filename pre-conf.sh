@@ -4,6 +4,7 @@ set -e
 #missing from original repository ... 
 wget https://github.com/Samnan/MyWebSQL/releases/download/v3.9/mywebsql.zip
 unzip mywebsql.zip -d /var/www
+rm -rf /var/www/mywebsql/index.html
 rm mywebsql.zip
 
  #apache2 conf
