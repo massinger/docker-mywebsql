@@ -2,10 +2,10 @@
 set -e
 
 #missing from original repository ... 
-wget https://sourceforge.net/projects/mywebsql/files/stable/mywebsql-3.7.zip/download
-mv download mywebsql-3.7.zip
-unzip mywebsql-3.7.zip -d /var/www
-rm mywebsql-3.7.zip
+wget https://github.com/Samnan/MyWebSQL/releases/download/v3.9/mywebsql.zip
+mv download mywebsql-3.9.zip
+unzip mywebsql-3.9.zip -d /var/www
+rm mywebsql-3..zip
 
  #apache2 conf
  a2enmod rewrite
