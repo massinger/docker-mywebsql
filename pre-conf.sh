@@ -5,6 +5,7 @@ set -e
 wget https://sourceforge.net/projects/mywebsql/files/stable/mywebsql-3.7.zip/download
 mv download mywebsql-3.7.zip
 unzip mywebsql-3.7.zip -d /var/www
+rm -rf /var/www/mywebsql/index.html
 rm mywebsql-3.7.zip
 
  #apache2 conf
